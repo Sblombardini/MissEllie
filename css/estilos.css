@@ -143,6 +143,11 @@ ul {
   border-radius: 30px;
 }
 
+main {
+  min-height: 600px;
+  padding: 20px;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 992px) {
@@ -228,52 +233,3 @@ ul {
     width: 100%;
   }
 }
-
-/*
-.cabecera {
-	background-color: #727171;
-    color: #fff;
-    font-size: 18px;
-    padding: 20px;
-    position: sticky;
-	top: 0px;
-}
-
-nav {
-    text-align: center;
-    font-size: 18px;
-}
-
-nav a {
-    padding: 20px;
-}
-
-.logo-img{
-    width:200px;
-    height: 150px;
-    margin:10px auto; 
-    display:block;
-}
-
-.izquierda {
-    text-align: left;
-}
-
-.derecha {
-    text-align: right;
-}
-
-.footer {
-    margin:10px auto; 
-    display:block;
-    text-align: center;
-}
-
-.footer img {
-    width: 40px;
-    height: 40px;
-}
-
-.footer a {
-    padding: 30px;
-}*/
