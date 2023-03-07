@@ -109,6 +109,22 @@ ul {
     font-family: "Montserrat";
 }
 
+.separador-secciones{
+    width: 100%; 
+    height: 24px; 
+    border-bottom: 2px solid #dfbbbb; 
+    text-align: center
+}
+
+.separador-secciones span{
+    font-size: 30px; 
+    background-color: #dfbbbb; 
+    padding: 10px 20px;
+    border: 1px solid #dfbbbb;
+}
+
+/* Media queries */
+
 @media screen and (max-width: 767px) {
   .navbar-nav {
     flex-direction: column;
