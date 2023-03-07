@@ -9,7 +9,153 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    margin: 0px;
+}
 
+.dato-secundario::before{
+    content: "\00a0 / ";
+}
+
+.navbar{
+    background-color: #727171;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 10px;
+}
+
+.navbar-toggler{
+    border-color: #fff;
+}
+
+.bi-search::before {
+    color: #fff;
+    font-size: 22px;
+}
+
+.navbar form {
+    align-items: center;
+}
+
+.logo-img{
+    width:200px;
+    height: 150px;
+    margin:10px auto; 
+    display:block;
+}
+
+.collapse:not(.show) {
+    display: flex;
+}
+
+
+
+ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.nav-item > .nav-link.active {
+    border-bottom: 3px solid #dfbbbb;
+    color: #dfbbbb;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #dfbbbb;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar-nav{
+        flex-direction: column;
+    }
+
+    .nav-link {
+        width: 160px;
+    }
+
+    .navbar>.container-fluid {
+        justify-content: center;
+    }
+
+    .container-fluid > a {
+        order: 3;
+        height: 20px;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .container-fluid > button {
+        order: 1;
+        margin: 0px 5px;
+    }
+
+    .container-fluid > form {
+        order: 2;
+        width: calc(85% - 30px);
+        margin: 0px 5px;
+    }
+
+    .cabecera{
+        display: inline-block;
+    }
+
+    .logo-img{
+        display: none;
+    }
+
+    .navbar-nav {
+        float:left;
+        width: 300px;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid > form {
+        order: 2;
+        width: calc(85% - 30px);
+        margin: 0px;
+    }
+
+    .dato-secundario{
+        display: none;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+}
+
+/*
 .cabecera {
 	background-color: #727171;
     color: #fff;
@@ -56,4 +202,4 @@ nav a {
 
 .footer a {
     padding: 30px;
-}
+}*/
