@@ -133,6 +133,16 @@ ul {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer a, .footer a img {
+  width: 60px;
+  border-radius: 30px;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 992px) {
@@ -200,6 +210,10 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
+  .card {
+    padding: 10px 20px;
+  }
+
   .container-fluid > form {
     order: 2;
     width: calc(85% - 30px);
