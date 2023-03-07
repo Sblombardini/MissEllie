@@ -87,7 +87,9 @@ ul {
     font-weight: bold;
 }
 
-
+.fotos-carousel{
+    margin: 20px;
+}
 
 @media screen and (max-width: 767px) {
     .navbar-nav{
