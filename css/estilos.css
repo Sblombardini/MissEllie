@@ -21,6 +21,10 @@ p {
     background-color: #727171;
 }
 
+.container-fluid > div:hover{
+    color: #ffffff;
+}
+
 .navbar-nav{
     flex-direction: row;
 }
@@ -51,6 +55,7 @@ p {
     height: 150px;
     margin:10px auto; 
     display:block;
+    border-radius: 50px;
 }
 
 .collapse:not(.show) {
@@ -91,6 +96,15 @@ ul {
     margin: 20px;
 }
 
+.carousel-item {
+    position: relative;
+    display: none;
+    float: center;
+    width: 100%;
+    margin-right: 0px;
+    max-height: 600px;
+}
+
 @media screen and (max-width: 767px) {
     .navbar-nav{
         flex-direction: column;
@@ -104,7 +118,7 @@ ul {
         justify-content: center;
     }
 
-    .container-fluid > a {
+    .container-fluid > div {
         order: 3;
         height: 20px;
         font-size: 20px;
