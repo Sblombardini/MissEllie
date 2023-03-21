@@ -6,24 +6,27 @@
 
 //Creacion de mixines
 
-@mixin crearTexto($size,$weight){
+@mixin crearTexto($size, $weight) {
   font-size: $size;
-  @if($weight!=""){
+
+  @if($weight !="") {
     font-weight: $weight;
   }
+
   font-family: map-get($map: $fuentes, $key: font-principal);
 }
 
-@mixin definirAltoAncho($width,$height){
+@mixin definirAltoAncho($width, $height) {
   width: $width;
   height: $height;
 }
 
-@mixin definirMarginPadding($margin,$padding){
-  @if($margin!=""){
+@mixin definirMarginPadding($margin, $padding) {
+  @if($margin !="") {
     margin: $margin;
   }
-  @if($padding!=""){
+
+  @if($padding !="") {
     padding: $padding;
   }
 }
@@ -46,9 +49,11 @@ body {
 
 .carousel-caption.d-none.d-md-block {
   background-color: map-get($map: $colores, $key: carrousel-background);
+
   p {
     @include crearTexto(30px, "");
   }
+
   h5 {
     @include crearTexto(20px, bold);
   }
@@ -59,6 +64,7 @@ body {
   border-bottom: 2px solid map-get($map: $colores, $key: color-principal);
   text-align: center;
   margin-bottom: 50px;
+
   span {
     @include definirMarginPadding("", 10px 20px);
     font-size: 30px;
@@ -70,6 +76,14 @@ body {
 .card {
   width: 18rem;
   border: none;
+
+  img {
+    transform: translateX(24px);
+  }
+
+  .card-body {
+    transform: translate(24px, -10px);
+  }
 }
 
 .card-body {
@@ -81,15 +95,35 @@ main {
   padding: 20px;
 }
 
-/* Media queries */
+.consejo {
+  border: 4px solid map-get($map: $colores, $key: color-principal);
+  border-radius: 10px;
+  @include definirMarginPadding(10px, 10px);
 
-@media screen and (max-width: 992px) {
+  .parrafo {
+    @include definirMarginPadding(0px, 20px);
+  }
+
   .card {
-    width: 20rem;
+    align-items: center;
+
+    img {
+      @include definirAltoAncho(200px, 200px)
+    }
   }
 }
 
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+
+}
+
 @media screen and (max-width: 767px) {
+  .consejo:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  
   .fotos-carousel {
     margin: 20px 20px;
   }
@@ -106,10 +140,6 @@ main {
 }
 
 @media screen and (max-width: 576px) {
-  .card {
-    padding: 10px 20px;
-  }
-
   .container-fluid>form {
     order: 2;
     width: calc(85% - 30px);
@@ -126,6 +156,24 @@ main {
 
   .mb-3.row label {
     display: none;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .consejo {
+
+    .card {
+      width: auto;
+
+      img {
+        transform: translate(5px, -10px);
+      }
+
+      .card-body {
+        transform: translate(5px, -10px);
+      }
+    }
   }
 
 }
