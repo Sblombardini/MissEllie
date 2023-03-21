@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        width: 60px;
+        border-radius: 30px;
+
+        img {
+            @extend a;
+        }
+    }
+}
