@@ -21,13 +21,13 @@ p {
 .navbar-brand {
     display: flex;
     align-items: center;
-    color: map-get($map: $colores, $key: body-background);
+    color: map-get($map: $colores, $key: color-secundario);
     font-size: 22px;
     padding: 20px 10px;
 }
 
 .navbar-toggler {
-    border-color: map-get($map: $colores, $key: body-background);
+    border-color: map-get($map: $colores, $key: color-secundario);
 }
 
 .bi-search::before {
