@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .navbar {
   background-color: #727171;
+  z-index: 900;
 }
 .navbar form {
   align-items: center;
@@ -16,6 +17,7 @@ p {
 
 .navbar-nav {
   flex-direction: row;
+  z-index: 900;
 }
 
 .navbar-brand {
@@ -41,6 +43,16 @@ p {
   margin: 10px auto;
   display: block;
   border-radius: 50px;
+}
+
+.contenedor-animacion {
+  height: 20px;
+}
+
+.saludo {
+  width: 100px;
+  height: 100px;
+  transform: translate(50px, -80px);
 }
 
 .collapse:not(.show) {
