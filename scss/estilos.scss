@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat";
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  p {
+    margin: 0px;
+  }
+  
+  .dato-secundario::before {
+    content: "\00a0 / ";
+  }
+  
+  .navbar {
+    background-color: #727171;
+  }
+  
+  .container-fluid > div:hover {
+    color: #ffffff;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+  
+  .navbar-toggler {
+    border-color: #fff;
+  }
+  
+  .bi-search::before {
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  .navbar form {
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 200px;
+    height: 150px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 50px;
+  }
+  
+  .collapse:not(.show) {
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  .nav-item > .nav-link.active {
+    border-bottom: 3px solid #dfbbbb;
+    color: #dfbbbb;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #dfbbbb;
+    font-weight: bold;
+  }
+  
+  .fotos-carousel {
+    margin: 20px 100px;
+  }
+  
+  .carousel-caption.d-none.d-md-block {
+    background-color: #7271719e;
+  }
+  
+  .carousel-caption.d-none.d-md-block p {
+    font-size: 30px;
+    font-family: "Montserrat";
+  }
+  
+  .carousel-caption.d-none.d-md-block h5 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Montserrat";
+  }
+  
+  .separador-secciones {
+    width: 100%;
+    height: 24px;
+    border-bottom: 2px solid #dfbbbb;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .separador-secciones span {
+    font-size: 30px;
+    background-color: #dfbbbb;
+    padding: 10px 20px;
+    border: 1px solid #dfbbbb;
+  }
+  
+  .card {
+    width: 18rem;
+    border: none;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer a, .footer a img {
+    width: 60px;
+    border-radius: 30px;
+  }
+  
+  main {
+    min-height: 600px;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Media queries */
+  
+  @media screen and (max-width: 992px) {
+    .card {
+      width: 20rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .nav-link {
+      width: 160px;
+    }
+  
+    .navbar > .container-fluid {
+      justify-content: center;
+    }
+  
+    .container-fluid > div {
+      order: 3;
+      height: 20px;
+      font-size: 20px;
+      margin-top: 10px;
+      padding: 0px;
+    }
+  
+    .container-fluid > button {
+      order: 1;
+      margin: 0px 5px;
+    }
+  
+    .container-fluid > form {
+      order: 2;
+      width: calc(85% - 30px);
+      margin: 0px 5px;
+    }
+  
+    .cabecera {
+      display: inline-block;
+    }
+  
+    .logo-img {
+      display: none;
+    }
+  
+    .navbar-nav {
+      float: left;
+      width: 300px;
+    }
+  
+    .collapse:not(.show) {
+      display: none;
+    }
+  
+    .fotos-carousel {
+      margin: 20px 20px;
+    }
+  
+    .container {
+      max-width: 346px;
+    }
+  
+    #contacto.container{
+      max-width: 600px;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card {
+      padding: 10px 20px;
+    }
+  
+    .container-fluid > form {
+      order: 2;
+      width: calc(85% - 30px);
+      margin: 0px;
+    }
+  
+    .dato-secundario {
+      display: none;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+    }
+  
+    #contacto.container .row{
+      flex-direction: column-reverse;
+    }
+  
+    #contacto.container .row .col{
+      margin-bottom: 100px;
+    }
+  
+    .mb-3.row label {
+      display: none;
+    }
+  
+  }
+  
