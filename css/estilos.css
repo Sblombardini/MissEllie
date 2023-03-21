@@ -185,6 +185,7 @@ body {
 .separador-secciones span {
   padding: 10px 20px;
   font-size: 30px;
+  color: #ffffff;
   background-color: #dfbbbb;
   border: 1px solid #dfbbbb;
 }
@@ -210,14 +211,16 @@ main {
 }
 
 .consejo {
-  border: 4px solid #dfbbbb;
+  border: 4px solid #ffffff;
   border-radius: 10px;
+  background: linear-gradient(90deg, rgb(29, 39, 54) 0%, rgb(168, 168, 168) 100%);
   margin: 50px 0px;
   padding: 10px;
 }
 .consejo .parrafo {
   margin: 0px;
   padding: 20px;
+  color: #ffffff;
 }
 .consejo .card {
   align-items: center;
@@ -263,7 +266,7 @@ main {
     width: auto;
   }
   .consejo .card img {
-    transform: translate(5px, -10px);
+    transform: translateX(5px);
   }
   .consejo .card .card-body {
     transform: translate(5px, -10px);
