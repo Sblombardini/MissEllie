@@ -214,6 +214,11 @@ main {
   margin: 50px 0px;
   padding: 10px;
 }
+.consejo .col-lg-4.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .consejo .parrafo {
   margin: 0px;
   padding: 20px;
@@ -221,11 +226,9 @@ main {
 }
 .consejo .card {
   align-items: center;
-  width: auto;
 }
 .consejo .card img {
-  width: 200px;
-  height: 200px;
+  transform: none;
 }
 
 /* Media queries */
@@ -262,9 +265,6 @@ main {
 @media screen and (max-width: 390px) {
   .consejo .card {
     width: auto;
-  }
-  .consejo .card img {
-    transform: translateX(5px);
   }
   .consejo .card .card-body {
     transform: translate(5px, -10px);
