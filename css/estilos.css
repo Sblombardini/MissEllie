@@ -221,6 +221,7 @@ main {
 }
 .consejo .card {
   align-items: center;
+  width: auto;
 }
 .consejo .card img {
   width: 200px;

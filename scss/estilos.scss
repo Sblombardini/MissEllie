@@ -109,7 +109,7 @@ main {
 
   .card {
     align-items: center;
-
+    width: auto;
     img {
       @include definirAltoAncho(200px, 200px)
     }
@@ -117,10 +117,6 @@ main {
 }
 
 /* Media queries */
-
-@media screen and (max-width: 992px) {
-
-}
 
 @media screen and (max-width: 767px) {
   .consejo:nth-child(even) {
