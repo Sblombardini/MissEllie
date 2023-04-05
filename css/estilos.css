@@ -139,12 +139,31 @@ p {
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+.footer label {
+  transform: translateX(-12px);
 }
 .footer a, .footer a img {
-  width: 60px;
+  width: 35px;
   border-radius: 30px;
 }
+.footer-bar {
+  margin-top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #727171;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
