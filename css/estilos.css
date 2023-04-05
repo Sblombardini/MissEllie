@@ -227,23 +227,6 @@ main {
   padding: 20px;
 }
 
-.contenedor-caminando {
-  height: 200px;
-}
-.contenedor-caminando .caminando {
-  width: 250px;
-  animation: caminando 10s linear infinite;
-  position: absolute;
-}
-
-@keyframes caminando {
-  0% {
-    left: -20%;
-  }
-  100% {
-    left: 120%;
-  }
-}
 .consejo {
   border: 4px solid #ffffff;
   border-radius: 10px;
@@ -266,6 +249,25 @@ main {
 }
 .consejo .card img {
   transform: none;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
 }
 
 /* Media queries */
