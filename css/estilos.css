@@ -36,6 +36,7 @@ p {
 
 .navbar-toggler {
   border-color: #ffffff;
+  transform: translate(-10px, 10px);
 }
 
 .bi-search::before {
