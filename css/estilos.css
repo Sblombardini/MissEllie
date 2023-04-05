@@ -227,6 +227,23 @@ main {
   padding: 20px;
 }
 
+.contenedor-caminando {
+  height: 200px;
+}
+.contenedor-caminando .caminando {
+  width: 250px;
+  animation: caminando 10s linear infinite;
+  position: absolute;
+}
+
+@keyframes caminando {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 120%;
+  }
+}
 .consejo {
   border: 4px solid #ffffff;
   border-radius: 10px;
